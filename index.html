@@ -80,9 +80,16 @@
       font-weight: 600;
       margin-top: 14px;
     }
+      @media (max-width: 600px) {
+      body { padding: 16px; }
+      .container { padding: 20px; }
+      .player-row { flex-direction: column; }
+      button { width: 100%; margin-top: 6px; }
+      #calcBtn { margin-left: 0; }
+    }
   </style>
 </head>
-<body>
+<body style="padding-bottom: 20px">
   <div class="container">
     <h1>Poker Cash Game Split Calculator</h1>
     <p>Add players, enter their buy-in (chipped in) and cash-out (chipped out), then calculate who owes whom.</p>
